@@ -1,0 +1,30 @@
+import math
+import random
+n1 = float(input('Digite um número real: '))
+print('O número {:.3f} tem a parte inteira {}'.format(n1, math.trunc(n1)))
+n2 = float(input('Qual o comprimento do cateto oposto: '))
+n21 = float(input('Qual o  comprimentodo cateto adjacente: '))
+hi = math.hypot(n2, n21)
+print('O hipotenusa desse triangulo quadrado é {:.2f}'.format(hi))
+n3 = float(input('Digite o angulo que deseja: '))
+seno = math.sin(math.radians(n3))
+cos = math.cos(math.radians(n3))
+tan = math.tan(math.radians(n3))
+print('O seno do ângulo {} será {:.2f}\n o cosseno será {:.2f}\n o tangente será {:.2f} '.format(n3, seno, cos, tan))
+print('O professor quer sortear 4 alunos da sala para apagar o quadro')
+alu1 = input('Digite o nome do primeiro aluno: ')
+alu2 = input('Digite o nome do segundo aluno: ')
+alu3 = input('Digite o nome do terceiro aluno: ')
+alu4 = input('digite o nome do quarto aluno: ')
+lista = [alu1, alu2, alu3, alu4]
+ale1 = random.choice(lista)
+print('O aluno sorteado foi {}'.format(ale1))
+al1 = input('Primeiro aluno: ')
+al2 = input('Segundo aluno: ')
+al3 = input('Terceiro aluno: ')
+al4 = input('Quarto aluno: ')
+lista2 = [al1, al2, al3, al4]
+random.shuffle(lista2)
+print('A ordem da apresentação será:')
+print(lista2)
+

@@ -1,0 +1,5 @@
+n1 = int(input('Poderia me dizer um número?:'))
+n2 = int(input('Diz outro número:'))
+n3 = int(input('Outro número:'))
+R = n1*(n2+n3)**(1/2)
+print('Então o resultado é {}'.format(R))

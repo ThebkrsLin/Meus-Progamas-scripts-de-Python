@@ -1,0 +1,6 @@
+nome = str(input('Digite o seu nome completo: '))
+divd = nome.strip()
+print('O seu nome maiusculo é {}'.format(divd.upper()))
+print('E o seu nome minusculo é {}'.format(divd.lower()))
+print('Quantas letras tem ao todo em considerar os espaços {}'.format(len(nome)-nome.count(' ')))
+print('Quantas letras tem o primeiro nome {}'.format(divd.find(' ')))
